@@ -2,7 +2,10 @@ module go-advanced-yandex
 
 go 1.21.3
 
-require modernc.org/sqlite v1.28.0
+require (
+	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
+	modernc.org/sqlite v1.28.0
+)
 
 require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
