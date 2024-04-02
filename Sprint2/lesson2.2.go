@@ -15,6 +15,7 @@ type Example struct {
 func main() {
 	// проверяем на валидность email и URL
 	result, err := govalidator.ValidateStruct(Example{
+		Name:  "John Smith",
 		Email: "johndoe@example.com",
 		URL:   "https://www.ya.ru",
 	})
